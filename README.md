@@ -40,15 +40,15 @@ your_folder_name
 ├── node_modules
 ├── src
 |   ├── commands			 /* All commands handlers */
-|	|	├── start.ts
-|	|	└── command.ts		 /* Basic Command class */
+||	├── start.ts
+||	└── command.ts		 /* Basic Command class */
 |   ├── enums
-|	|	└── SceneNames.ts	 /* Enum with all scenes names */
+||	└── SceneNames.ts	 /* Enum with all scenes names */
 |   ├── scenes				 /* All scenes */
-|	|	├── scene.ts		 /* Basic Scene class */
-|	|	└── me.ts
+||	├── scene.ts		 /* Basic Scene class */
+||	└── me.ts
 |   ├── types				 /* General types */
-|	|	└── IBotContext.ts	 /* Bot Context Interface */
+||	└── IBotContext.ts	 /* Bot Context Interface */
 |   └── app.ts				 /* Main app file */
 ├── .gitignore
 ├── package.json
