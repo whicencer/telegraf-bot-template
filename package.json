@@ -1,0 +1,19 @@
+{
+  "name": "telegraf-bot-template",
+  "scripts": {
+    "start": "ts-node-dev --respawn --transpile-only ./src/app.ts"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "module-alias": "^2.2.3",
+    "telegraf": "^4.16.3"
+  },
+  "devDependencies": {
+    "ts-node-dev": "^2.0.0",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.6.3"
+  },
+  "_moduleAliases": {
+    "@src": "./src"
+  }
+}
