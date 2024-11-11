@@ -41,7 +41,7 @@ your_folder_name
 |   ├── commands			 /* All commands handlers */
 |   |	├── start.ts
 |   |	└── command.ts
-|   ├── enums                /* Enums */
+|   ├── enums                            /* Enums */
 |   |	└── SceneNames.ts
 |   ├── scenes				 /* All scenes */
 |   |	├── scene.ts
