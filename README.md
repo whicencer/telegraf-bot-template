@@ -40,15 +40,15 @@ your_folder_name
 ├── src
 |   ├── commands			 /* All commands handlers */
 |   |	├── start.ts
-|   |	└── command.ts		 /* Basic Command class */
-|   ├── enums
-|   |	└── SceneNames.ts	 /* Enum with all scenes names */
+|   |	└── command.ts
+|   ├── enums                /* Enums */
+|   |	└── SceneNames.ts
 |   ├── scenes				 /* All scenes */
-|   |	├── scene.ts		 /* Basic Scene class */
+|   |	├── scene.ts
 |   |	└── me.ts
 |   ├── types				 /* General types */
-|   |	└── IBotContext.ts	 /* Bot Context Interface */
-|   └── app.ts				 /* Main app file */
+|   |	└── IBotContext.ts
+|   └── app.ts
 ├── .gitignore
 ├── package.json
 ├── README.md
