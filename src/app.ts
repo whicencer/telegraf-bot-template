@@ -1,16 +1,22 @@
 import "dotenv/config";
+import "module-alias/register";
 
-import { Telegraf } from "telegraf";
+import { Scenes, session, Telegraf } from "telegraf";
 import { Command } from "./commands/command";
 import { StartCommand } from "./commands/start";
 import { IBotContext } from "./types/IBotContext";
+import { me } from "./scenes/me";
 
 class Bot {
   bot: Telegraf<IBotContext>;
   commands: Command[] = [];
 
   constructor() {
+    const stage = new Scenes.Stage<IBotContext>([me]);
+
     this.bot = new Telegraf<IBotContext>(process.env.TELEGRAM_BOT_TOKEN || "");
+    this.bot.use(session());
+    this.bot.use(stage.middleware());
   }
 
   private setupCommands() {
