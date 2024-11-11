@@ -1,4 +1,3 @@
-
 # Telegraf-Bot-Template
 
 **🤖 Build your own Telegram bots with this template**
