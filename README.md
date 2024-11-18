@@ -1,4 +1,3 @@
-
 # Telegraf-Bot-Template
 
 **🤖 Build your own Telegram bots with this template**
@@ -48,16 +47,16 @@ telegraf-bot
 ├── node_modules
 ├── src
 |   ├── commands			 /* All commands handlers */
-|	|	├── start.ts
-|	|	└── command.ts		 /* Basic Command class */
-|   ├── enums
-|	|	└── SceneNames.ts	 /* Enum with all scenes names */
+|   |	├── start.ts
+|   |	└── command.ts
+|   ├── enums                            /* Enums */
+|   |	└── SceneNames.ts
 |   ├── scenes				 /* All scenes */
-|	|	├── scene.ts		 /* Basic Scene class */
-|	|	└── me.ts
+|   |	├── scene.ts
+|   |	└── me.ts
 |   ├── types				 /* General types */
-|	|	└── IBotContext.ts	 /* Bot Context Interface */
-|   └── app.ts				 /* Main app file */
+|   |	└── IBotContext.ts
+|   └── app.ts
 ├── .gitignore
 ├── package.json
 ├── README.md
