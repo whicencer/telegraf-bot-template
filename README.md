@@ -17,23 +17,19 @@ git clone https://github.com/whicencer/telegraf-bot-template.git telegraf-bot
 cd telegraf-bot
 rm -rf .git
 ```
-**Step 3. Initialize your own git repository if needed**
-```bash
-git init
-```
-**Step 4. Create `.env` file and specify the Telegram bot token**
+**Step 3. Create `.env` file and specify the Telegram bot token**
 ```
 TELEGRAM_BOT_TOKEN=your_token
 ```
-**Step 5. Install all dependencies**
+**Step 4. Install all dependencies**
 ```bash
 npm install
 ```
-**Step 6. (only for development)**
+**Step 5. (only for development)**
 ```bash
 npm run dev
 ```
-**Step 7. If you want to run the bot in production**
+**Step 6. If you want to run the bot in production**
 ```bash
 npm run build
 npm start
