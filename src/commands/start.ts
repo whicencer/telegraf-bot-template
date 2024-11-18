@@ -1,7 +1,7 @@
 import { Telegraf } from "telegraf";
 import { Command } from "./command";
-import { IBotContext } from "@src/types/IBotContext";
-import { SceneNames } from "@src/enums/SceneNames";
+import { IBotContext } from "types/IBotContext";
+import { SceneNames } from "enums/SceneNames";
 
 export class StartCommand extends Command {
   constructor(bot: Telegraf<IBotContext>) {

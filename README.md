@@ -3,40 +3,48 @@
 
 **🤖 Build your own Telegram bots with this template**
 
-| TypeScript | Node.js | Telegraf.js | Complexity |
-|------------|---------| ----------- | ---------- |
-|     ✅     |   ✅    |     ✅      |     🚫     |
+| TypeScript | Node.js | Telegraf.js | Webpack  | Complexity |
+|------------|---------| ----------- | -------- | ---------- |
+|     ✅     |   ✅    |     ✅      |    ✅    |    🚫     |
 
 
 ## How to start
-**Step 1. Clone this repo into the folder for your project**
-
-    git clone git@github.com:whicencer/telegraf-bot-template.git your_folder_name
-**Step 2. Go to the project folder and remove the `.git` directory to unlink from git**
+**Step 1. Clone this repository**
+```bash
+git clone https://github.com/whicencer/telegraf-bot-template.git telegraf-bot
 ```
-cd your_folder_name
+**Step 2. Go to the project folder and remove the `.git` directory to unlink from git**
+```bash
+cd telegraf-bot
 rm -rf .git
 ```
 **Step 3. Initialize your own git repository if needed**
-```
+```bash
 git init
-git add .
-git commit -m "init"
 ```
 **Step 4. Create `.env` file and specify the Telegram bot token**
 ```
 TELEGRAM_BOT_TOKEN=your_token
 ```
-**Step 5. Install all dependencies and run the code**
-```
+**Step 5. Install all dependencies**
+```bash
 npm install
+```
+**Step 6. (only for development)**
+```bash
+npm run dev
+```
+**Step 7. If you want to run the bot in production**
+```bash
+npm run build
 npm start
 ```
-These instructions will guide you through setting up a new project using the specified template, including initializing a new git repository and starting the application.
+
+These instructions will guide you through setting up a new project using the specified template, including initializing a new git repository and starting the application in development and production modes respectively.
 ## Project structure
 
 ```
-your_folder_name
+telegraf-bot
 ├── node_modules
 ├── src
 |   ├── commands			 /* All commands handlers */

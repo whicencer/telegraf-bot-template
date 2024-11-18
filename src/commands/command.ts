@@ -1,4 +1,4 @@
-import { IBotContext } from "@src/types/IBotContext";
+import { IBotContext } from "types/IBotContext";
 import { Telegraf } from "telegraf";
 
 export abstract class Command {

@@ -1,4 +1,4 @@
-import { SceneNames } from "@src/enums/SceneNames";
+import { SceneNames } from "enums/SceneNames";
 import { Scene } from "./scene";
 
 export const me = new Scene(SceneNames.ME);

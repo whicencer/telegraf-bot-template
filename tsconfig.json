@@ -8,7 +8,7 @@
       "es6",
       "es7"
     ],
-    "target": "es2017",
+    "target": "ES6",
     "module": "commonjs",
     "moduleResolution": "node",
     "rootDir": ".",
@@ -21,10 +21,13 @@
     "resolveJsonModule": true,
     "allowJs": true,
     "sourceMap": true,
-    "baseUrl": ".",
+    "baseUrl": "./src",
     "paths": {
       "@src/*": ["src/*"],
     },
   },
-  "include": ["src/**/*"]
+  "include": [
+    "src/**/*",
+    "webpack.config.ts"
+  ]
 }

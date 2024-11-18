@@ -1,5 +1,5 @@
 import { BaseScene } from "telegraf/scenes";
-import { IBotContext } from "@src/types/IBotContext";
+import { IBotContext } from "types/IBotContext";
 
 export class Scene extends BaseScene<IBotContext> {
   constructor(sceneName: string) {

@@ -1,7 +1,9 @@
 {
   "name": "telegraf-bot-template",
   "scripts": {
-    "start": "ts-node-dev --respawn --transpile-only ./src/app.ts"
+    "build": "webpack --config webpack.config.ts",
+    "start": "node ./build/app.js",
+    "dev": "ts-node-dev --respawn --transpile-only -r tsconfig-paths/register ./src/app.ts"
   },
   "dependencies": {
     "dotenv": "^16.4.5",
@@ -9,9 +11,15 @@
     "telegraf": "^4.16.3"
   },
   "devDependencies": {
+    "@types/webpack": "^5.28.5",
+    "@types/webpack-node-externals": "^3.0.4",
+    "ts-loader": "^9.5.1",
     "ts-node-dev": "^2.0.0",
     "tsconfig-paths": "^4.2.0",
-    "typescript": "^5.6.3"
+    "typescript": "^5.6.3",
+    "webpack": "^5.96.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-node-externals": "^3.0.0"
   },
   "_moduleAliases": {
     "@src": "./src"
